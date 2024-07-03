@@ -1,0 +1,4 @@
+ctrl + shift - 0x21 : yabai -m window --space next && yabai -m display --focus recent
+ctrl + shift - 0x1E: yabai -m window --space prev && yabai -m display --focus recent
+ctrl + shift - 0x2A: yabai -m space --rotate 90
+ctrl + shift + cmd - 0x2A: yabai -m config layout bsp
