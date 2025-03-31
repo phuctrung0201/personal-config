@@ -1,7 +1,9 @@
 #! /bin/bash
 source ./scripts/log.sh
 
-info "Setting up the environment..."
+info "Setting up configuration..."
+info "sync: Sync configuration to the repository"
+info "apply: Apply configuration to the system"
 
 # Define the configuration directories
 ZED_CONFIG_DIR=./dotfiles/zed

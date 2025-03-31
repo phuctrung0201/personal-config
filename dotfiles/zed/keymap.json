@@ -17,7 +17,11 @@
     "context": "Editor",
     "use_key_equivalents": true,
     "bindings": {
-      "cmd-shift-c": "workspace::CopyRelativePath"
+      "cmd-shift-c": "workspace::CopyRelativePath",
+      "cmd-;": "git::ToggleStaged",
+      "cmd-shift-backspace": "git::Restore",
+      "cmd-[": "editor::GoToPreviousHunk",
+      "cmd-]": "editor::GoToHunk"
     }
   }
 ]
