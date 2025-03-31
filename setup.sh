@@ -43,6 +43,29 @@ sync () {
     info "Syncing complete."
 }
 
+# Install applications
+install () {
+    info "Installing applications..."
+
+    # Install zed
+    if ! command -v zed &> /dev/null; then
+        info "Installing zed..."
+        brew install --cask zed
+    else
+        warn "Zed is already installed. Skipping..."
+    fi
+
+    # Install aerospace
+    if ! command -v aerospace &> /dev/null; then
+        info "Installing aerospace..."
+        brew install --cask nikitabobko/tap/aerospace
+    else
+        warn "Aerospace is already installed. Skipping..."
+    fi
+
+    info "Installation complete."
+}
+
 # Apply the configuration to the system
 apply () {
     info "Applying configuration to the system..."

@@ -20,6 +20,9 @@ cd personal-config
 # Source the setup script
 source setup.sh
 
+# install applications
+install
+
 # apply the configuration
 apply
 
