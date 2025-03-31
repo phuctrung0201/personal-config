@@ -14,8 +14,11 @@ To install the configuration files, run the following commands:
 # Clone the repository
 git clone git@github.com:phuctrung0201/personal-config.git
 
+# Change the working directory
+cd personal-config
+
 # Source the setup script
-source personal-config/setup.sh
+source setup.sh
 
 # apply the configuration
 apply
