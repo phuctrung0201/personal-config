@@ -1,4 +1,0 @@
-yabai -m rule --add app!="^Arc$|^Code$|^iTerm2$|^yaak$|^TablePlus$|^Slack$" manage=off
-yabai -m config window_gap 15
-yabai -m config auto_balance on
-yabai -m config layout bsp
