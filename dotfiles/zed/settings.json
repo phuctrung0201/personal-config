@@ -19,7 +19,8 @@
   },
   "ui_font_size": 16,
   "terminal": {
-    "font_family": "MesloLGS NF"
+    "font_family": "MesloLGS NF",
+    "dock": "right"
   },
   "buffer_font_size": 16,
   "theme": {
