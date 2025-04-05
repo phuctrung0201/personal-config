@@ -4,6 +4,7 @@ This repository contains the configuration files for my personal machine. It inc
 
 - zed: code editor
 - aerospace: tiling window manager
+- ghostty: terminal emulator
 
 ## Installation
 
