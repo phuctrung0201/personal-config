@@ -117,10 +117,10 @@ alt-minus = 'resize smart -50'
 alt-equal = 'resize smart +50'
 
 # See: https://nikitabobko.github.io/AeroSpace/commands#workspace
-f1 = 'workspace 1'
-f2 = 'workspace 2'
-f3 = 'workspace 3'
-f4 = 'workspace 4'
+cmd-f1 = 'workspace 1'
+cmd-f2 = 'workspace 2'
+cmd-f3 = 'workspace 3'
+cmd-f4 = 'workspace 4'
 
 # See: https://nikitabobko.github.io/AeroSpace/commands#move-node-to-workspace
 cmd-shift-f1 = 'move-node-to-workspace --focus-follows-window 1'
@@ -130,9 +130,9 @@ cmd-shift-f4 = 'move-node-to-workspace --focus-follows-window 4'
 
 
 # See: https://nikitabobko.github.io/AeroSpace/commands#workspace-back-and-forth
-alt-tab = 'workspace-back-and-forth'
+cmd-ctrl-tab = 'workspace-back-and-forth'
 # See: https://nikitabobko.github.io/AeroSpace/commands#move-workspace-to-monitor
-alt-shift-tab = 'move-workspace-to-monitor --wrap-around next'
+cmd-ctrl-shift-tab = 'move-workspace-to-monitor --wrap-around next'
 
 # See: https://nikitabobko.github.io/AeroSpace/commands#mode
 cmd-esc = 'mode service'
