@@ -48,5 +48,18 @@
   },
   "collaboration_panel": {
     "dock": "right"
+  },
+  "lsp": {
+    "pyright": {
+      "settings": {
+        "python.analysis": {
+          "diagnosticSeverityOverrides": {
+            "reportOptionalMemberAccess": "none",
+            "reportArgumentType": "none",
+            "reportAttributeAccessIssue": "none"
+          }
+        }
+      }
+    }
   }
 }
