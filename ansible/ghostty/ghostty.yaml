@@ -1,0 +1,17 @@
+- name: Install ghostty and initialize configuration
+  hosts: localhost
+  tasks:
+    - name: Install ghostty
+      homebrew:
+        name: ghostty
+        state: present
+    - name: Create config dir
+      file:
+        path: ~/.config/ghostty
+        state: directory
+        mode: 0755
+    - name: Initialize configuration
+      template:
+        src: config.toml
+        dest: ~/.config/ghostty/config
+        mode: 0644

@@ -3,3 +3,6 @@
 
 - name: Setup aerospace
   import_playbook: aerospace/aerospace.yaml
+
+- name: Setup ghostty
+  import_playbook: ghostty/ghostty.yaml

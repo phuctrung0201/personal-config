@@ -8,8 +8,6 @@ info "apply: Apply configuration to the system"
 
 # Define the configuration directories
 ZED_CONFIG_DIR=./dotfiles/zed
-AEROSPACE_CONFIG_DIR=./dotfiles/aerospace
-GHOSTTY_CONFIG_DIR=./dotfiles/ghostty
 
 # Sync configuration to the repository
 sync () {
@@ -32,17 +30,6 @@ sync () {
     else
         warn "Zed settings file not found. Skipping..."
     fi
-
-    # Sync ghostty settings
-    # Check if the ghostty configuration directory exists
-    if [ ! -d "~/.config/ghostty" ]; then
-        info "Syncing ghostty settings..."
-        cp -r ~/.config/ghostty/config $GHOSTTY_CONFIG_DIR
-    else
-        warn "Ghostty settings directory not found. Skipping..."
-    fi
-
-    info "Syncing complete."
 }
 
 # Install applications
@@ -56,16 +43,6 @@ install () {
     else
         warn "Zed is already installed. Skipping..."
     fi
-
-    # Install ghostty
-    if ! command -v ghostty &> /dev/null; then
-        info "Installing ghostty..."
-        brew install --cask ghostty
-    else
-        warn "Ghostty is already installed. Skipping..."
-    fi
-
-    info "Installation complete."
 }
 
 # Apply the configuration to the system
@@ -89,11 +66,4 @@ apply () {
     else
         warn "Zed settings file not found. Skipping..."
     fi
-
-    # Apply ghostty
-    mkdir -p ~/.config/ghostty
-    info "Applying ghostty settings..."
-    cp $GHOSTTY_CONFIG_DIR/config ~/.config/ghostty/config
-
-    info "Applying complete."
 }
