@@ -1,0 +1,32 @@
+- name: Install aerospace and initialize configuration
+  hosts: localhost
+  tasks:
+    - name: Install aerospace
+      homebrew:
+        name: aerospace
+        state: present
+    - name: Install border color
+      homebrew:
+        name: borders
+        state: present
+    - name: Create config dir
+      file:
+        path: "~/.config/aerospace"
+        state: directory
+        mode: 0755
+    - name: Initialize config
+      copy:
+        src: "./config.toml"
+        dest: "~/.config/aerospace/aerospace.toml"
+    - name: Backup the origin config
+      copy:
+        src: "~/.aerospace.toml"
+        dest: "~/.config/aerospace/aerospace.toml.bk"
+      ignore_errors: yes
+    - name: Delete the origin config
+      file:
+        path: "~/.aerospace.toml"
+        state: absent
+      ignore_errors: yes
+    - name: Activate aerospace
+      shell: "open -a AeroSpace.app"

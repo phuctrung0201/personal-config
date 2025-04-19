@@ -33,15 +33,6 @@ sync () {
         warn "Zed settings file not found. Skipping..."
     fi
 
-    # Sync aerospace settings
-    # Check if the aerospace configuration file exists
-    if [ ! -f "~/.aerospace.toml" ]; then
-        info "Syncing aerospace settings..."
-        cp ~/.aerospace.toml $AEROSPACE_CONFIG_DIR/aerospace.toml
-    else
-        warn "Aerospace settings file not found. Skipping..."
-    fi
-
     # Sync ghostty settings
     # Check if the ghostty configuration directory exists
     if [ ! -d "~/.config/ghostty" ]; then
@@ -64,14 +55,6 @@ install () {
         brew install --cask zed
     else
         warn "Zed is already installed. Skipping..."
-    fi
-
-    # Install aerospace
-    if ! command -v aerospace &> /dev/null; then
-        info "Installing aerospace..."
-        brew install --cask nikitabobko/tap/aerospace
-    else
-        warn "Aerospace is already installed. Skipping..."
     fi
 
     # Install ghostty
@@ -105,15 +88,6 @@ apply () {
         cp $ZED_CONFIG_DIR/settings.json ~/.config/zed/settings.json
     else
         warn "Zed settings file not found. Skipping..."
-    fi
-
-    # Apply aerospace settings
-    # Check if the aerospace configuration file exists
-    if [ -f "$AEROSPACE_CONFIG_DIR/aerospace.toml" ]; then
-        info "Applying aerospace settings..."
-        cp $AEROSPACE_CONFIG_DIR/aerospace.toml ~/.aerospace.toml
-    else
-        warn "Aerospace settings file not found. Skipping..."
     fi
 
     # Apply ghostty

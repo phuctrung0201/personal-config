@@ -1,2 +1,5 @@
 - name: Setup mise
   import_playbook: mise/mise.yaml
+
+- name: Setup aerospace
+  import_playbook: aerospace/aerospace.yaml
