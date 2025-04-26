@@ -100,36 +100,36 @@ outer.right = 8
 # '''
 
 # See: https://nikitabobko.github.io/AeroSpace/commands#layout
-alt-esc = 'layout tiles accordion'
+cmd-esc = 'layout tiles accordion'
 alt-comma = 'layout accordion horizontal vertical'
 
 # See: https://nikitabobko.github.io/AeroSpace/commands#focus
-alt-f1 = 'focus left'
-alt-f2 = 'focus down'
-alt-f3 = 'focus up'
-alt-f4 = 'focus right'
+cmd-f1 = 'focus left'
+cmd-f2 = 'focus down'
+cmd-f3 = 'focus up'
+cmd-f4 = 'focus right'
 
 # See: https://nikitabobko.github.io/AeroSpace/commands#move
-alt-shift-f1 = 'move left'
-alt-shift-f2 = 'move down'
-alt-shift-f3 = 'move up'
-alt-shift-f4 = 'move right'
+cmd-shift-f1 = 'move left'
+cmd-shift-f2 = 'move down'
+cmd-shift-f3 = 'move up'
+cmd-shift-f4 = 'move right'
 
 # See: https://nikitabobko.github.io/AeroSpace/commands#resize
 alt-minus = 'resize smart -50'
 alt-equal = 'resize smart +50'
 
 # See: https://nikitabobko.github.io/AeroSpace/commands#workspace
-cmd-f1 = 'workspace 1'
-cmd-f2 = 'workspace 2'
-cmd-f3 = 'workspace 3'
-cmd-f4 = 'workspace 4'
+alt-f1 = 'workspace 1'
+alt-f2 = 'workspace 2'
+alt-f3 = 'workspace 3'
+alt-f4 = 'workspace 4'
 
 # See: https://nikitabobko.github.io/AeroSpace/commands#move-node-to-workspace
-cmd-shift-f1 = 'move-node-to-workspace --focus-follows-window 1'
-cmd-shift-f2 = 'move-node-to-workspace --focus-follows-window 2'
-cmd-shift-f3 = 'move-node-to-workspace --focus-follows-window 3'
-cmd-shift-f4 = 'move-node-to-workspace --focus-follows-window 4'
+alt-shift-f1 = 'move-node-to-workspace --focus-follows-window 1'
+alt-shift-f2 = 'move-node-to-workspace --focus-follows-window 2'
+alt-shift-f3 = 'move-node-to-workspace --focus-follows-window 3'
+alt-shift-f4 = 'move-node-to-workspace --focus-follows-window 4'
 
 
 # See: https://nikitabobko.github.io/AeroSpace/commands#workspace-back-and-forth
@@ -138,7 +138,7 @@ cmd-ctrl-tab = 'workspace-back-and-forth'
 cmd-ctrl-shift-tab = 'move-workspace-to-monitor --wrap-around next'
 
 # See: https://nikitabobko.github.io/AeroSpace/commands#mode
-cmd-esc = 'mode service'
+alt-esc = 'mode service'
 
 # 'service' binding mode declaration.
 # See: https://nikitabobko.github.io/AeroSpace/guide#binding-modes
@@ -170,10 +170,6 @@ shift-down = ['volume set 0', 'mode main']
 
 [[on-window-detected]]
 if.app-id = 'com.tinyspeck.slackmacgap'
-run = 'move-node-to-workspace --focus-follows-window 1'
-
-[[on-window-detected]]
-if.app-id = 'company.thebrowser.Browser'
 run = 'move-node-to-workspace --focus-follows-window 1'
 
 [[on-window-detected]]
