@@ -104,14 +104,14 @@ cmd-esc = 'layout tiles accordion'
 alt-comma = 'layout accordion horizontal vertical'
 
 # See: https://nikitabobko.github.io/AeroSpace/commands#focus
-cmd-f1 = 'focus down'
-cmd-f2 = 'focus left'
+cmd-f1 = 'focus left'
+cmd-f2 = 'focus down'
 cmd-f3 = 'focus right'
 cmd-f4 = 'focus up'
 
 # See: https://nikitabobko.github.io/AeroSpace/commands#move
-cmd-shift-f1 = 'move down'
-cmd-shift-f2 = 'move left'
+cmd-shift-f1 = 'move left'
+cmd-shift-f2 = 'move down'
 cmd-shift-f3 = 'move right'
 cmd-shift-f4 = 'move up'
 
@@ -170,20 +170,20 @@ shift-down = ['volume set 0', 'mode main']
 
 [[on-window-detected]]
 if.app-id = 'com.googlecode.iterm2'
-run = 'move-node-to-workspace --focus-follows-window 3'
+run = 'move-node-to-workspace --focus-follows-window 4'
 
 [[on-window-detected]]
 if.app-id = 'com.mitchellh.ghostty'
-run = 'move-node-to-workspace --focus-follows-window 3'
+run = 'move-node-to-workspace --focus-follows-window 4'
 
 [[on-window-detected]]
 if.app-id = 'com.microsoft.VSCode'
-run = 'move-node-to-workspace --focus-follows-window 2'
+run = 'move-node-to-workspace --focus-follows-window 4'
 
 [[on-window-detected]]
 if.app-id = 'dev.zed.Zed'
-run = 'move-node-to-workspace --focus-follows-window 2'
+run = 'move-node-to-workspace --focus-follows-window 4'
 
 [[on-window-detected]]
 check-further-callbacks = true
-run = 'move-node-to-workspace --focus-follows-window 1'
+run = 'move-node-to-workspace --focus-follows-window 3'
